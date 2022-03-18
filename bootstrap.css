@@ -1,72 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #181818;
-
-}
 
 
 div /*element nomi */ {
-  
-   width: 200px;
-   height: 200px;
-   border: 2px solid white;
-   box-shadow: 16px 14px 20px #0000008c;
-   border-radius: 10px;
-   position: relative;
-   overflow: hidden;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   background-color: aqua;
+   position: absolute;
+   width: 150px;
+   height: 150px;
+   animation-name: action;
+   animation-duration: 4s;
 
 }
-div::before{
-    content: "";
-    background-image: conic-gradient(
-        #ff0052 20deg,
-        transparent 120deg
-    );
-    width: 150%;
-    height: 150%;
-    position: absolute;
-    animation: rotate 2s linear infinite;
-}
-div::after{
-    content: "Animation";
-    width: 190px;
-    height: 190px;
-    background: #101010;
-    position: absolute;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ff0052;
-    font-size: larger;
-    letter-spacing: 5px;
-    box-shadow: inset 20px 20px 20px #0000008c;
-}
-@keyframes rotate {
-    0%{
-        transform: rotate(-360deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
 
-/* @keyframes action{
-    0%   {border-top: 1px solid red;}
-    25%  {border-top: none; border-left: 1px solid red; }
-    50%  {border-top: none; border-left: none;  border-bottom: 1px solid red ;}
-    75%  {border-top: none;border-left: none; border-bottom: none; border-right: 1px solid red ;}
-} */
+@keyframes action{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
 
