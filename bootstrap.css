@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
 }
@@ -9,7 +9,52 @@ body {
   min-height: 100vh;
   background-color: #080808;
 }
-h1::before {
+
+
+section{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    animation: mover 5s running linear infinite alternate;
+    /* animation-name: mover;
+    animation-duration: 5s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+
+    
+}
+section:hover{
+    animation-play-state: running;
+}
+
+@keyframes mover {
+    0% {left: 0px; background: yellow;}
+    50% {left: 200px; background: red;}
+    100% {left: 200px; background: violet;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h1::before {
   color: white;
   content: "";
   animation-name: rasm-izoh;
@@ -34,9 +79,9 @@ h1::before {
   100% {
     content: "Auditoriya!";
   }
-}
+} */ 
 
-section /*element nomi */ {
+/* section  {
   position: relative;
   background-size: 100%;
   width: 250px;
@@ -45,9 +90,9 @@ section /*element nomi */ {
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
+} */
 
-@keyframes action {
+/* @keyframes action {
   0% {
     background-image: url("./assets/IMG_20180814_163955_604.jpg");
   }
@@ -70,24 +115,51 @@ section /*element nomi */ {
   gap: 5px;
   position: absolute;
   bottom: 10px;
-  left: 60px;
+  left: 80px;
 }
 
-.badge {
-  background-color: black;
-  width: 20px;
-  height: 4px;
-  border-radius: 2px;
-}
-
-.badge1 {
-  animation-name: badge1;
+ span::before {
+  content: "";
+  color: yellow;
+  animation-name: text;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-@keyframes badge1 {
+@keyframes text {
+  0% {
+    content: '1';
+  }
+  25% {
+    content: '2';
+  }
+  50% {
+    content: '3';
+  }
+  75% {
+    content: '4';
+  }
+  100% {
+    content: '5';
+  }
+} */
+
+/* .badge {
+  background-color: black;
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+} */
+
+/* .badge1 {
+  animation-name: badge1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
+
+/* @keyframes badge1 {
   0% {
     background-color: green;
   }
@@ -202,4 +274,4 @@ section /*element nomi */ {
     100% {
       background-color: green;
     }
-  }
+  } */
