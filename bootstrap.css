@@ -1,21 +1,205 @@
-
-
-
-div /*element nomi */ {
-   background-color: aqua;
-   position: absolute;
-   width: 150px;
-   height: 150px;
-   animation-name: action;
-   animation-duration: 4s;
-
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #080808;
+}
+h1::before {
+  color: white;
+  content: "";
+  animation-name: rasm-izoh;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-@keyframes action{
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+@keyframes rasm-izoh {
+  0% {
+    content: "Bu Gulning rasmi!";
+  }
+  25% {
+    content: "Quyosh botishi";
+  }
+  50% {
+    content: "Mening Rasmim 1";
+  }
+  75% {
+    content: "Mashina va Men!";
+  }
+  100% {
+    content: "Auditoriya!";
+  }
 }
 
+section /*element nomi */ {
+  position: relative;
+  background-size: 100%;
+  width: 250px;
+  height: 250px;
+  animation-name: action;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes action {
+  0% {
+    background-image: url("./assets/IMG_20180814_163955_604.jpg");
+  }
+  25% {
+    background-image: url("./assets/grid2.jpg");
+  }
+  50% {
+    background-image: url("./assets/grid3.jpg");
+  }
+  75% {
+    background-image: url("./assets/grid4.jpg");
+  }
+  100% {
+    background-image: url("./assets/grid5.jpg");
+  }
+}
+
+.container {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
+}
+
+.badge {
+  background-color: black;
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.badge1 {
+  animation-name: badge1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes badge1 {
+  0% {
+    background-color: green;
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: black;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+.badge2 {
+  animation-name: badge2;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes badge2 {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: black;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.badge3 {
+    animation-name: badge3;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes badge3 {
+    0% {
+      background-color: black;
+    }
+    25% {
+      background-color: black;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: black;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+
+  .badge4 {
+    animation-name: badge4;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes badge4 {
+    0% {
+      background-color: black;
+    }
+    25% {
+      background-color: black;
+    }
+    50% {
+      background-color: black;
+    }
+    75% {
+      background-color: green;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+
+  .badge5 {
+    animation-name: badge5;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes badge5 {
+    0% {
+      background-color: black;
+    }
+    25% {
+      background-color: black;
+    }
+    50% {
+      background-color: black;
+    }
+    75% {
+      background-color: black;
+    }
+    100% {
+      background-color: green;
+    }
+  }
