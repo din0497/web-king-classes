@@ -1,20 +1,51 @@
-let number1 = prompt('Number kiriting');
-let number2 = prompt('Number2ni kiriting');
+// function result() {
+//   let age = 6;
+//   let age1 = 5;
+//   let natija = age + age1;
+//   console.log(natija);
+// }
 
-let result = number1 * number2;
+// result()
+// let ism = prompt('Ismingiz nima?');
+// let kiritilganYil = prompt('Tug`ulgan yilingiz?')
 
-if(result % 5 == 0){
-    alert('qoldiqsiz bo`linadi'
-} else if (result % 5 > 0){
-    alert('qoldiqli bo`linadi')
+// function yoshniHisoblang (name, kiritilgan, hozirgiYil) {
+//     let yosh = hozirgiYil - kiritilgan;
+//     alert(`Salom ${name}, Siz ${yosh}yoshdasiz!`)
+// }
+
+// yoshniHisoblang (ism,kiritilganYil, 2022 )
+
+//const img = document.querySelector('img')
+// const text = document.querySelector('h1');
+// const like = document.querySelector('.like')
+// const dislike = document.querySelector('.dislike')
+// let likelarSoni = 0;
+
+// function likeniQosh () {
+//     likelarSoni ++
+//     text.textContent = likelarSoni;
+//     img.style.left=`${likelarSoni}px`
+//     if(likelarSoni > 0){
+//         text.style.color = 'green'
+//     }
+// }
+
+// function likeniAyir () {
+//     likelarSoni--
+//     text.textContent = likelarSoni;
+//     img.style.right=`${likelarSoni}px`
+
+//     if(likelarSoni < 0){
+//         text.style.color = 'red'
+//     }
+// }
+
+//  like.addEventListener('click', likeniQosh)
+//  dislike.addEventListener('click', likeniAyir)
+function tur (param) {
+    return typeof param
 }
-
-
-
-
-
-
-
 
 
 

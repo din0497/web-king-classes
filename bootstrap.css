@@ -11,12 +11,12 @@ body {
 }
 
 
-section{
+/* section{
     width: 150px;
     height: 150px;
     background-color: white;
     position: relative;
-    animation: mover 5s running linear infinite alternate;
+    animation: mover 5s running linear infinite alternate; */
     /* animation-name: mover;
     animation-duration: 5s;
     animation-play-state: paused;
@@ -25,7 +25,7 @@ section{
 
 
     
-}
+/* }
 section:hover{
     animation-play-state: running;
 }
@@ -34,7 +34,7 @@ section:hover{
     0% {left: 0px; background: yellow;}
     50% {left: 200px; background: red;}
     100% {left: 200px; background: violet;}
-}
+} */
 
 
 
@@ -54,7 +54,7 @@ section:hover{
 
 
 
-/* h1::before {
+h1::before {
   color: white;
   content: "";
   animation-name: rasm-izoh;
@@ -79,9 +79,9 @@ section:hover{
   100% {
     content: "Auditoriya!";
   }
-} */ 
+} 
 
-/* section  {
+section  {
   position: relative;
   background-size: 100%;
   width: 250px;
@@ -90,9 +90,9 @@ section:hover{
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-} */
+}
 
-/* @keyframes action {
+ @keyframes action {
   0% {
     background-image: url("./assets/IMG_20180814_163955_604.jpg");
   }
