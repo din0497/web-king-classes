@@ -16,55 +16,27 @@
 
     body {
       display: flex;
-      justify-content: start;
+      justify-content: center;
       align-items: center;
       min-height: 100vh;
       background-color: #080808;
     }
 
-    div {
-      display: flex;
-      flex-direction: column;
-      width: 200px;
-      height: 200px;
-      position: relative;
-      left: 0;
-      background-color: white;
-      animation-name: mover;
-      animation-duration: 5s;
-      /* animation-delay: 2s; */
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-
-    }
-
-    @keyframes mover {
-      0% {
-        background-color: yellow;
-        left: 0px;
-      }
-
-      50% {
-        background-color: blue;
-        left: 500px;
-      }
-
-  
-
-      100% {
-        background-color: green;
-        left: 500px;
-      }
+    button {
+      width: 150px;
+      padding: 15px;
+      outline: none;
+      box-sizing: border-box;
+      color: white;
     }
   </style>
 </head>
 
 <body>
-  <div>
-
-
-  </div>
-
+  <section>
+    <button id='like' style="background:red;">like <span id="display1">0</span></button>
+    <button id="dislike" style="background:orange;">dislike <span id="display2">0</span></button>
+  </section>
   <script src="./index.js"></script>
 </body>
 
